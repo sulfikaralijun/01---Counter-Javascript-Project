@@ -34,4 +34,8 @@ body {
   border-radius: 10px;
   border: 3px solid ;
   font-size: 20px;
+  background: transparent;
+}
+button:active {
+  border-color: #035ECC;
 }
