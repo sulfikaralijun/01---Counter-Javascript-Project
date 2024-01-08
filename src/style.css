@@ -10,7 +10,7 @@ body {
   display: grid;
   place-items: center;
   background-color: #F1F5F8;
-  font-family: Arialz;
+  font-family: Arial;
 }
 .container {
   width: 400px;
