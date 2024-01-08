@@ -22,3 +22,16 @@ body {
 .container h1 {
   font-size: 50px;
 }
+.container #count {
+  font-size: 80px;
+}
+.container .btn {
+  display: flex;
+  gap: 20px;
+}
+.btn button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 3px solid ;
+  font-size: 20px;
+}
