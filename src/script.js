@@ -4,11 +4,31 @@ const countElement = document.getElementById("count");
 // initial count
 let count = 0;
 
-// update count
-const decrease = () => (countElement.innerText = --count);
+const handleClick = (type) => {
 
-// reset count
-const reset = () => (countElement.innerText = count = 0);
+  // change count
+  switch (type) {
+    case "decrease":
+      count--;
+      break;
+    case "reset":
+      count = 0;
+      break;
+    case "increase":
+      count++;
+      break;
+  }
 
-// increase count
-const increase = () => (countElement.innerText = ++count);
+  // update count
+  countElement.innerText = count;
+
+  // change color
+  if (count > 0) {
+    countElement.style.color = "green";
+  } else if (count < 0) {
+    countElement.style.color = "red";
+  } else {
+    countElement.style.color = "black";
+  }
+
+}
